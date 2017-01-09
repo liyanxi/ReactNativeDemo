@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ReactNativeDemo</string>
+    <string name="react_name">React Activity</string>
+    <string name="hybrid_name">Hybrid Activity</string>
+</resources>
