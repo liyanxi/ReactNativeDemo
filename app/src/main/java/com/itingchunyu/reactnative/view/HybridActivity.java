@@ -36,7 +36,8 @@ public class HybridActivity extends AppCompatActivity {
                 .setBundleAssetName("index.android.bundle")
                 .setJSMainModuleName("index.android")
                 .addPackage(new MainReactPackage())
-                .setUseDeveloperSupport(BuildConfig.DEBUG)
+                //如果为true，则会启用诸如JS重新加载和调试之类的开发人员选项。
+                .setUseDeveloperSupport(true)
                 .setInitialLifecycleState(LifecycleState.RESUMED)
                 .build();
         mReactRootView.startReactApplication(mReactInstanceManager, "AwesomeProject", null);
